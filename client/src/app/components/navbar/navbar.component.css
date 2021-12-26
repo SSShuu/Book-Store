@@ -1,0 +1,27 @@
+.container{
+  display: flex;
+  height: 7vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #636569;
+  z-index: 60;
+}
+.categories-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+.categories-container:hover{
+  background-color: #f2811e;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+.category{
+  font-size: ;
+  margin: auto;
+}

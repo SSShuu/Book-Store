@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="details-container">
+    <h1 *ngIf="_ShoppingService.category == 'Life'" class="category-name">
+      {{ "Life" }}
+    </h1>
+    <h1 *ngIf="_ShoppingService.category == 'History'" class="category-name">
+      {{ "History" }}
+    </h1>
+    <h1 *ngIf="_ShoppingService.category == 'Education'" class="category-name">
+      {{ "Education" }}
+    </h1>
+    <h1 *ngIf="_ShoppingService.category == 'Novel'" class="category-name">
+      {{ "Novel" }}
+    </h1>
+    <p class="details" *ngIf="_ShoppingService.category == 'Life'">
+    </p>
+    <p class="details" *ngIf="_ShoppingService.category == 'History'">
+    </p>
+    <p class="details" *ngIf="_ShoppingService.category == 'Education'">
+    </p>
+    <p class="details" *ngIf="_ShoppingService.category == 'Novel'">
+    </p>
+  </div>
+  <mat-divider class="divider"></mat-divider>
+  <div class="products-conatainer">
+    <div *ngFor="let product of _ShoppingService.productsByCategory" class="products">
+      <app-product-item [product]="product"></app-product-item>
+    </div>
+  </div>
+  <mat-divider class="divider"></mat-divider>
+</div>
